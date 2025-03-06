@@ -11,7 +11,7 @@ class ProductController extends Controller
     }
 
     public function create(){
-    
+        return view ('products.create');
     }
     public function show(){
         echo 'PRODUCTO: $name';
