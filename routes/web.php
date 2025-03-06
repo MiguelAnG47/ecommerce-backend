@@ -7,4 +7,4 @@ use App\Http\Controllers\ProductController;
 Route::get('/', HomeController::class);
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/create', [ProductController::class, 'create']);
-Route::get('/products/{name}', [ProductController::class, 'show']);
+Route::get('/products/show', [ProductController::class, 'show']);

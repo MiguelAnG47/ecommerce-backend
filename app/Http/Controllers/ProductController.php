@@ -14,7 +14,8 @@ class ProductController extends Controller
         return view ('products.create');
     }
     public function show(){
-        echo 'PRODUCTO: $name';
+        //echo 'PRODUCTO: $name';
+        return view('products.show'); //RETORNAR EL DETALLE DE UN PRODUCTO
     }
 
 }
