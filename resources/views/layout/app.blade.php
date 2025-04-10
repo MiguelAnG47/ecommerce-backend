@@ -49,16 +49,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
+                    <a class="nav-link" href="/">Inicio <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
+                    <a class="nav-link" href="/products/index">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Iniciar Sesión</a>
+                    <a class="nav-link" href="/products/create">Formulario</a>
                 </li>
             </ul>
         </div>
