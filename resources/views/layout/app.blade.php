@@ -10,32 +10,107 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <style>
-            body {
-                background-color: #f8f9fa;
-            }
-    
-            .jumbotron {
-                background-image: url('https://via.placeholder.com/1500x500');
-                background-size: cover;
-                color: white;
-                text-shadow: 2px 2px 4px #000000;
-            }
-    
-            .card {
-                transition: transform .2s;
-            }
-    
-            .card:hover {
-                transform: scale(1.05);
-            }
-    
-            footer {
-                background-color: #343a40;
-                color: white;
-                padding: 20px 0;
-            }
-        </style>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-detail {
+            padding: 20px;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e67e22;
+            /* Color naranja para el precio */
+            margin-bottom: 15px;
+        }
+
+        .product-info {
+            margin-top: 20px;
+        }
+
+        .product-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .product-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-info li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        .container {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform .2s;
+        }
+
+        .jumbotron {
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -52,7 +127,7 @@
                     <a class="nav-link" href="/">Inicio <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/products/index">Productos</a>
+                    <a class="nav-link" href="/products/">Productos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/products/create">Formulario</a>
@@ -62,7 +137,7 @@
     </nav>
 
 
-   @yield('content')
+    @yield('content')
 
     <footer class="bg-dark text-white text-center py-3 mt-auto">
         <div class="container">
@@ -70,7 +145,7 @@
         </div>
     </footer>
 
- 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
