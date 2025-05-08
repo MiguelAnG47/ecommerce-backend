@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section('content')
     <div class="container mt-5">
         <h2 class="text-center mb-4">Nuestros Productos</h2>

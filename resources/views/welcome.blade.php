@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section('content')
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid text-center">

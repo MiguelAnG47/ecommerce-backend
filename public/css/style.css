@@ -2,6 +2,68 @@ body {
     background-color: #f8f9fa;
 }
 
+.navbar {
+    min-height: 50px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 992px) {
+    .navbar {
+        height: 50px;
+    }
+}
+
+
+.navbar-brand {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.nav-link {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+}
+
+.navbar-toggler {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.8rem;
+}
+
+.navbar-collapse {
+    background-color: #343a40;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding: 0.5rem;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+
+footer {
+    height: 30px;
+    min-height: 30px;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
 .product-image {
     width: 100%;
     height: auto;
@@ -68,16 +130,17 @@ body {
 }
 
 .container {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
 }
 
 .card {
     border: none;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform .2s;
+    background-color: #ffffff;
+    transition: transform 0.2s, border-color 0.3s;
 }
 
 .jumbotron {
@@ -90,10 +153,36 @@ body {
 
 .card:hover {
     transform: scale(1.05);
+    border-color: #800000;
 }
 
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
+/* Form label styling */
+.form-label {
+    font-weight: 500;
+    color: #343a40;
+}
+
+/* Form control with Bootstrap focus states */
+.form-control {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #800000;
+    box-shadow: 0 0 0 0.25rem var(--bs-focus-ring-color);
+}
+
+/* Error feedback */
+.invalid-feedback {
+    color: #dc3545;
+}
+
+/* Checkbox styling */
+.form-check-input:checked {
+    background-color: #800000;
+    border-color: #800000;
+}
+
+.form-check-label {
+    color: #343a40;
 }
